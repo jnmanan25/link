@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>SIGN IN</h1>
+<br>
+<hr>
+<form class="post" method="post" action="/post">
+<br>
+	<label for="id">Username</label>
+	<input type="text" name="id"><br>
+	
+	<label for="password">Password</label>
+	<input type="password" name="password"><br>
+	
+	<label for="email">E-mail</label>
+	<input type="text" name="email"><br>
+	
+	<input type="submit" name="submit" value="signup">
+
+</form>
+
+	<form class="login" method="get" action="/post">
+
+		<input type="submit" name="login" value="Login">
+
+	</form>
+
+	
+
+{% endblock %}

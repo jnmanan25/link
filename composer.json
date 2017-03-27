@@ -1,0 +1,20 @@
+{
+	"name":"vedansh/mvc",
+	"description":"Sample app from MVC lecture",
+	"require": {
+	"torophp/torophp": "dev-master",
+	"twig/twig": "2.0"
+	},
+	"authors": [
+	{
+	"name": "Vedansh Bhartia",
+	"email": "vedanshbhartia@gmail.com"
+	}
+	],
+	"autoload":{
+		"psr-4":{
+			"Blog\\Controllers\\":"app/controllers",
+			"Blog\\Models\\":"app/models"
+		}
+	}
+}

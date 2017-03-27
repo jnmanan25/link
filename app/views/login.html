@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+
+<form class="post" method="post" action="/home">
+<br>
+	<label for="id">Username</label>
+	<input type="text" name="id"><br>
+	
+	<label for="password">Password</label>
+	<input type="name" name="password"><br>
+	
+	
+	<label for="email">E-mail</label>
+	<input type="text" name="email"><br>
+	
+	<input type="submit" name="submit">
+</form>
+{% endblock %}

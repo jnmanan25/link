@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Link Manager{% endblock %}
+
+{% block content %}
+
+<form class="post" method="post" action="/save">
+  
+  <label for="link">Enter link</label>
+  <input type="text" name="link"><br><br>
+  <input type="submit" name="submit" value = "Save">
+</form>
+
+<
+
+<h1>Your links</h1>
+
+{% for post in data %}
+
+{{ post.link }}
+
+<br>
+
+{% endfor %}
+{% endblock %} 	
